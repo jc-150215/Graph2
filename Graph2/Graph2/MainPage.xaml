@@ -6,6 +6,7 @@
              x:Class="Grap2.MainPage">
     <ContentPage.Content>
         <StackLayout>
+            
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
                           HorizontalOptions="FillAndExpand">
