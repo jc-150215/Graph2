@@ -26,7 +26,7 @@
                    Text="        "/>
             <Label Text="体脂肪(%)"/>
             <Entry x:Name="BFat"
-                   Text="        "/>
+                   Text="         "/>
             <Button Text="TOP"
                     BorderBrush="Silver" BorderThickness="5"
                     Clicked="Button_Clicked"/>
