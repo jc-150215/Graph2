@@ -24,7 +24,6 @@
             <Label Text="日付"/>
             
 
-
             <Label Text="体重(kg)"/>
             
             <Entry x:Name="Weight"
