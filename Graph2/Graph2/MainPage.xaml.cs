@@ -13,8 +13,9 @@ namespace Graph2
         {
             InitializeComponent();
         }
+        Double w = Double.Parse(Weight.Text);
+        Double b = Double.Parse(BFat.Text);
 
-        
         private void Button_Clicked(object sender, EventArgs e)
         {
 

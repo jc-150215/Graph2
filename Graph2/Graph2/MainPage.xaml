@@ -18,15 +18,23 @@
             </oxy:PlotView>
 
             <Label Text="前回比　体重(kg)"/>
+            
             <Label Text="体脂肪 %"/>
+            
             <Label Text="日付"/>
-            <DatePicker Format="D"/>
+            
+
+
             <Label Text="体重(kg)"/>
-            <Entry x:Name="Wight"
+            
+            <Entry x:Name="Weight"
                    Text="        "/>
+            
             <Label Text="体脂肪(%)"/>
+            
             <Entry x:Name="BFat"
                    Text="         "/>
+            
             <Button Text="TOP"
                     BorderBrush="Silver" BorderThickness="5"
                     Clicked="Button_Clicked"/>
