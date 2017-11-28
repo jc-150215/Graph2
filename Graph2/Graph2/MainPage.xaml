@@ -6,7 +6,10 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            
+
+            <Label Text="ボディー統計"
+                   WidthRequest="1000" />
+
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
                           HorizontalOptions="FillAndExpand">
@@ -14,6 +17,25 @@
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
+
+            <Label Text="前回比　体重(kg)"/>
+            <Label Text="体脂肪 %"/>
+            <Label Text="日付"/>
+            <DatePicker Format="D"/>
+            <Label Text="体重(kg)"/>
+            <Entry x:Name="Wight"
+                   Text="        "/>
+            <Label Text="体脂肪(%)"/>
+            <Entry x:Name="B-Fat"
+                   Text="        "/>
+            <Button Text="TOP"
+                    BorderBrush="Silver" BorderThickness="5"
+                    Clicked="Button_Clicked"/>
+
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
