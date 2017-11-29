@@ -9,23 +9,23 @@
         <Grid>
         <!-- 行の定義 -->
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="500" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="450" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
             </Grid.RowDefinitions>
         <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="500"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
             
             
@@ -46,7 +46,7 @@
                    WidthRequest="100"
                    Grid.Row="2"
                    Grid.Column="0"/>
-            
+
             <Label Text="体脂肪 (%)"
                    HeightRequest="100"
                    WidthRequest="100"
