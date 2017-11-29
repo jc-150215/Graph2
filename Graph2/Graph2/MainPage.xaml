@@ -9,23 +9,23 @@
         <Grid>
         <!-- 行の定義 -->
             <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
+                <RowDefinition Height="70" />
                 <RowDefinition Height="450" />
-                <RowDefinition Height="100" />
-                <RowDefinition Height="100" />
-                <RowDefinition Height="100" />
-                <RowDefinition Height="100" />
-                <RowDefinition Height="100" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
             </Grid.RowDefinitions>
         <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="450"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
             
             
