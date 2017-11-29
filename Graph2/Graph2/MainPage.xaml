@@ -5,10 +5,24 @@
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
-        <StackLayout>
 
-            <Label Text="ボディー統計" VerticalOptions="StartAndExpand" />
-            
+        <Grid>
+        <!-- 行の定義 -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- 列の定義 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Label Text="ボディー統計" VerticalOptions="StartAndExpand" />
+
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
                           HorizontalOptions="FillAndExpand">
@@ -17,14 +31,42 @@
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
 
-            <Label Text="前回比　体重(kg)" />
-            <Label Text="体脂肪 (%)" />
-            <Label Text="日付" />
-            <Label Text="体重(kg)" />
-            <Label Text="体脂肪(%)" />
-            <Button Text="TOP"
-                    Clicked="Button_Clicked"/>
+            <Label Text="前回比　体重(kg)" 
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+            <Label Text="体脂肪 (%)" 
+                   Grid.Row="3"
+                   Grid.Column="2"/>
+            
+            <Label Text="日付" 
+                   Grid.Row="4"
+                   Grid.Column="0"/>
 
-        </StackLayout>
+            <Label Text="体重(kg)" 
+                   Grid.Row="5"
+                   Grid.Column="0"/>
+
+            <Label Text="体脂肪(%)" 
+                   Grid.Row="6"
+                   Grid.Column="0"/>
+            
+            <Button Text="TOP"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Clicked="Button_Clicked"/>
+            
+            <Button Text="記録"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Clicked="Button_Clicked"/>
+            
+            <Button Text="ストップウォッチ"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    Clicked="Button_Clicked"/>
+            
+            </Grid>
+
+
     </ContentPage.Content>
 </ContentPage>
