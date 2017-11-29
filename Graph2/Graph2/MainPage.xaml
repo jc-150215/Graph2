@@ -14,17 +14,24 @@
                 <RowDefinition Height="10" />
                 <RowDefinition Height="10" />
                 <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
             </Grid.RowDefinitions>
         <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/><ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
-
-        <Label Text="ボディー統計" VerticalOptions="StartAndExpand" />
+            
+            
+            <Label Text="ボディー統計"
+                   Grid.Row="0"
+                   Grid.Column="2"/>
 
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
@@ -35,39 +42,39 @@
             </oxy:PlotView>
 
             <Label Text="前回比　体重(kg)" 
-                   Grid.Row="3"
+                   Grid.Row="2"
                    Grid.Column="0"/>
             <Label Text="体脂肪 (%)" 
-                   Grid.Row="3"
+                   Grid.Row="2"
                    Grid.Column="2"/>
             
             <Label Text="日付" 
-                   Grid.Row="4"
+                   Grid.Row="3"
                    Grid.Column="0"/>
 
             <Label Text="体重(kg)" 
-                   Grid.Row="5"
+                   Grid.Row="4"
                    Grid.Column="0"/>
 
             <Label Text="体脂肪(%)" 
-                   Grid.Row="6"
+                   Grid.Row="5"
                    Grid.Column="0"/>
             
             <Button Text="TOP"
-                    Grid.Row="7"
+                    Grid.Row="6"
                     Grid.Column="0"
                     Clicked="Button_Clicked"/>
             
             <Button Text="記録"
-                    Grid.Row="7"
+                    Grid.Row="6"
                     Grid.Column="1"
                     Clicked="Button_Clicked"/>
             
             <Button Text="ストップウォッチ"
-                    Grid.Row="7"
+                    Grid.Row="6"
                     Grid.Column="2"
                     Clicked="Button_Clicked"/>
-            
+
             </Grid>
 
 
