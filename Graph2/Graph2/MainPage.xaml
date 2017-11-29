@@ -5,9 +5,9 @@
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center">
+        <StackLayout>
 
-            <Label Text="ボディー統計"/>
+            <Label Text="ボディー統計" VerticalOptions="StartAndExpand" />
             
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
@@ -22,6 +22,8 @@
             <Label Text="日付" />
             <Label Text="体重(kg)" />
             <Label Text="体脂肪(%)" />
+            <Button Text="TOP"
+                    Clicked="Button_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>
