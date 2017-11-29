@@ -10,7 +10,7 @@
         <!-- 行の定義 -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="100" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
@@ -20,7 +20,7 @@
         <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -42,35 +42,52 @@
             </oxy:PlotView>
 
             <Label Text="前回比　体重(kg)" 
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="2"
                    Grid.Column="0"/>
-            <Label Text="体脂肪 (%)" 
+            
+            <Label Text="体脂肪 (%)"
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="2"
                    Grid.Column="2"/>
             
             <Label Text="日付" 
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="3"
                    Grid.Column="0"/>
 
-            <Label Text="体重(kg)" 
+            <Label Text="体重(kg)"
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="4"
                    Grid.Column="0"/>
 
-            <Label Text="体脂肪(%)" 
+            <Label Text="体脂肪(%)"
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="5"
                    Grid.Column="0"/>
             
             <Button Text="TOP"
+                    HeightRequest="100"
+                    WidthRequest="100"
                     Grid.Row="6"
                     Grid.Column="0"
                     Clicked="Button_Clicked"/>
             
             <Button Text="記録"
+                    HeightRequest="100"
+                    WidthRequest="100"
                     Grid.Row="6"
                     Grid.Column="1"
                     Clicked="Button_Clicked"/>
             
             <Button Text="ストップウォッチ"
+                    HeightRequest="100"
+                    WidthRequest="100"
                     Grid.Row="6"
                     Grid.Column="2"
                     Clicked="Button_Clicked"/>
