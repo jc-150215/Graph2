@@ -9,7 +9,7 @@
         <Grid>
             <!-- 行の定義 -->
             <Grid.RowDefinitions>
-                <RowDefinition Height="70" />
+                <RowDefinition Height="10" />
                 <RowDefinition Height="70" />
                 <RowDefinition Height="500" />
                 <RowDefinition Height="70" />
@@ -22,13 +22,13 @@
             <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="80"/>
-                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="500"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
 
             <Label Text=""
@@ -74,6 +74,8 @@
 
             <Entry x:Name="Weight"
                    Text="         "
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="5"
                    Grid.Column="1"/>
 
@@ -86,6 +88,8 @@
             
             <Entry x:Name="Bfat"
                    Text="         "
+                   HeightRequest="100"
+                   WidthRequest="100"
                    Grid.Row="6"
                    Grid.Column="1"/>
 
