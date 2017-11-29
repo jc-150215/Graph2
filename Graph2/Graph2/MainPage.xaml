@@ -10,7 +10,7 @@
         <!-- 行の定義 -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />
-                <RowDefinition Height="100" />
+                <RowDefinition Height="500" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
@@ -19,8 +19,8 @@
             </Grid.RowDefinitions>
         <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="500"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -58,6 +58,7 @@
                    WidthRequest="100"
                    Grid.Row="3"
                    Grid.Column="0"/>
+            
 
             <Label Text="体重(kg)"
                    HeightRequest="100"
