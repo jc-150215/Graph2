@@ -8,24 +8,19 @@
 
         <Grid>
         <!-- 行の定義 -->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="" />
-            <RowDefinition Height="" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
-            <RowDefinition Height="10" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
             </Grid.RowDefinitions>
         <!-- 列の定義 -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/><ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
 
