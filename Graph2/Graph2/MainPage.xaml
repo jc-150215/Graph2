@@ -5,10 +5,10 @@
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="Center">
 
             <Label Text="ボディー統計"/>
-
+            
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
                           HorizontalOptions="FillAndExpand">
@@ -16,6 +16,13 @@
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
+
+            <Label Text="前回比　体重(kg)" />
+            <Label Text="体脂肪 (%)" />
+            <Label Text="日付" />
+            <Label Text="体重(kg)" />
+            <Label Text="体脂肪(%)" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
