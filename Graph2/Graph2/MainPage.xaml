@@ -6,100 +6,114 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-        <StackLayout>
-            
-            <Label Text=""/>
-            
-            <Grid>
-                <!-- 行の定義 -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70" />
-                    <RowDefinition Height="500" />
-                    <RowDefinition Height="70" />
-                    <RowDefinition Height="70" />
-                    <RowDefinition Height="70" />
-                    <RowDefinition Height="70" />
-                    <RowDefinition Height="70" />
-                </Grid.RowDefinitions>
-                
-                <!-- 列の定義 -->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="500"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="150"/>
-                </Grid.ColumnDefinitions>
 
-                <Label Text="ボディー統計"
-                       Grid.Row="0"
-                       Grid.Column="2"/>
-                
-                <oxy:PlotView Model="{Binding Model}"
-                              Grid.Row="1"
+
+
+        <Grid>
+            <!-- 行の定義 -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="500" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <!-- 列の定義 -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text=""
+                   Grid.Row="0"
+                   Grid.Column="2"/>
+
+            <Label Text="ボディー統計"
+                   Grid.Row="1"
+                   Grid.Column="2"/>
+
+            <oxy:PlotView Model="{Binding Model}"
+                              Grid.Row="2"
                               Grid.Column="1">
-                    <oxy:PlotView.BindingContext>
-                        <local:LineChart />
-                    </oxy:PlotView.BindingContext>
-                </oxy:PlotView>
+                <oxy:PlotView.BindingContext>
+                    <local:LineChart />
+                </oxy:PlotView.BindingContext>
+            </oxy:PlotView>
 
             <Label Text="前回比　体重(kg)" 
                    HeightRequest="130"
                    WidthRequest="100"
-                   Grid.Row="2"
+                   Grid.Row="3"
                    Grid.Column="0"/>
 
             <Label Text="体脂肪 (%)"
                    HeightRequest="100"
                    WidthRequest="100"
-                   Grid.Row="2"
-                   Grid.Column="2"/>
-            
-            <Label Text="日付" 
-                   HeightRequest="100"
-                   WidthRequest="100"
                    Grid.Row="3"
-                   Grid.Column="0"/>
-            
+                   Grid.Column="2"/>
 
-            <Label Text="体重(kg)"
+            <Label Text="日付" 
                    HeightRequest="100"
                    WidthRequest="100"
                    Grid.Row="4"
                    Grid.Column="0"/>
 
-            <Label Text="体脂肪(%)"
+
+            <Label Text="体重(kg)"
                    HeightRequest="100"
                    WidthRequest="100"
                    Grid.Row="5"
                    Grid.Column="0"/>
+
+            <Entry x:Name="Weight"
+                   Text="         "
+                   Grid.Row="5"
+                   Grid.Column="1"/>
+
+
+            <Label Text="体脂肪(%)"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   Grid.Row="6"
+                   Grid.Column="0"/>
             
+            <Entry x:Name="Bfat"
+                   Text="         "
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+
             <Button Text="TOP"
                     HeightRequest="100"
                     WidthRequest="100"
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Grid.Column="0"
                     Clicked="Button_Clicked"/>
-            
+
             <Button Text="記録"
                     HeightRequest="100"
                     WidthRequest="100"
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Grid.Column="1"
                     Clicked="Button_Clicked"/>
-            
+
             <Button Text="ストップウォッチ"
                     HeightRequest="100"
                     WidthRequest="100"
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Grid.Column="2"
                     Clicked="Button_Clicked"/>
 
-            </Grid>
-
-        </StackLayout>
+        </Grid>
 
 
     </ContentPage.Content>
