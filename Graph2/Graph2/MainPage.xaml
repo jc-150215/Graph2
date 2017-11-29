@@ -6,9 +6,6 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-
-
-
         <Grid>
             <!-- 行の定義 -->
             <Grid.RowDefinitions>
@@ -43,13 +40,13 @@
                    Grid.Column="2"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                              Grid.Row="2"
-                              Grid.Column="1">
+                          Grid.Row="2"
+                          Grid.Column="1">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
-
+            
             <Label Text="前回比　体重(kg)" 
                    HeightRequest="130"
                    WidthRequest="100"

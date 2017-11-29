@@ -15,7 +15,7 @@ namespace GraphDemo
 
         public LineChart()
         {
-            //this.Model = new PlotModel { Title = "LineChart" };
+            this.Model = new PlotModel { Title = "" };
 
             var X_line = new LineSeries();
             X_line.Color = OxyColors.Red;
