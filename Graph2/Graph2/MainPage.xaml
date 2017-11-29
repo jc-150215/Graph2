@@ -6,6 +6,8 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
+        <StackLayout>
+
         <Grid>
         <!-- 行の定義 -->
             <Grid.RowDefinitions>
@@ -27,9 +29,10 @@
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
-            
-            
-            <Label Text="ボディー統計"
+
+                <Label Text=""/>
+
+                <Label Text="ボディー統計"
                    Grid.Row="0"
                    Grid.Column="2"/>
 
@@ -94,6 +97,8 @@
                     Clicked="Button_Clicked"/>
 
             </Grid>
+
+        </StackLayout>
 
 
     </ContentPage.Content>
