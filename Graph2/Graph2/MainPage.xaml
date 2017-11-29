@@ -34,8 +34,8 @@
                    Grid.Column="2"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                          VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand">
+                          Grid.Row="1"
+                          Grid.Column="2">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
