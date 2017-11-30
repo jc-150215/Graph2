@@ -22,8 +22,8 @@
             <!-- 列の定義 -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="250"/>
