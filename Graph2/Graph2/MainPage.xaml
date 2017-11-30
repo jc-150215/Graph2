@@ -6,17 +6,18 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-        <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical"
+                     Spacing="50">
 
             <Label Text=""
                    VerticalOptions="StartAndExpand"/>
 
             <Label Text="ボディー統計"
-                   VerticalOptions="CenterAndExpand"/>
+                   VerticalOptions="StartAndExpand"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                          VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand">
+                          VerticalOptions="StartAndExpand"
+                          HorizontalOptions="StartAndExpand">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
@@ -26,40 +27,41 @@
 
         <StackLayout Orientation="Horizontal">
 
-            <Label Text="前回比　体重(kg)" />
+            <Label Text="前回比　体重(kg)" 
+                   Spacing="50"/>
 
-            <Label Text="体脂肪 (%)"/>
+            <Label Text="体脂肪 (%)"
+                   Spacing="50"/>
 
         </StackLayout>
 
         <Label Text="日付" />
 
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal"
+                     Spacing="30">
 
             <Label Text="体重(kg)"/>
 
             <Entry x:Name="Weight"
-                   Text="         "
-                   HeightRequest="50"
-                   WidthRequest="100"/>
+                   Text="         "/>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal"
+                     Spacing="30">
 
             <Label Text="体脂肪(%)"/>
 
-            <Entry x:Name="Bfat"
+                <Entry x:Name="Bfat"
                    Text="         "/>
-            
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal"
+                     Spacing="60">
 
             <Button Text="TOP"
                     Clicked="Button_Clicked"/>
 
             <Button Text="記録"
-
                     Clicked="Button_Clicked"/>
 
             <Button Text="ストップウォッチ"
