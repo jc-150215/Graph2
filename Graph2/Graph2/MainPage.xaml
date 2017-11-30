@@ -11,8 +11,7 @@
 
             <Label Text="   "/>
 
-            <BoxView Color="Silver"
-                     Text="ボディー統計"/>
+            <Label Text="ボディー統計"/>
 
             <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
