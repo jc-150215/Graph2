@@ -12,8 +12,7 @@
             <Label Text="   "/>
 
             <Label Text="ボディー統計"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"/>
+                   VerticalOptions="StartAndExpand"/>
 
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
@@ -31,12 +30,16 @@
             <Label Text="前回比　体重(kg)" />
 
                 <Entry x:Name="GWeight"
-                   Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       Completed = "OnCompleted"/>
 
                 <Label Text="体脂肪 (%)"/>
             
                 <Entry x:Name="Gbfat"
-                   Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       Completed = "OnCompleted"/>
 
             </StackLayout>
 
@@ -55,7 +58,9 @@
             <Label Text="体重(kg)"/>
 
             <Entry x:Name="Weight"
-                   Text="             "/>
+                   WidthRequest="100"
+                   Text="             "
+                   Completed = "OnCompleted"/>
             
         </StackLayout>
 
@@ -65,11 +70,14 @@
             <Label Text="体脂肪(%)"/>
 
                 <Entry x:Name="Bfat"
-                   Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       Completed = "OnCompleted"/>
+            
             </StackLayout>
 
         <StackLayout Orientation="Horizontal"
-                     Spacing="300">
+                     Spacing="290">
 
             <Button Text="TOP"
                     Clicked="Button_Clicked"/>
