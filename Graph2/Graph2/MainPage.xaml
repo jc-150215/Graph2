@@ -7,91 +7,95 @@
     <ContentPage.Content>
 
         <StackLayout Orientation="Vertical"
-                     Spacing="50">
-            
-            <Label Text="   "/>
+                     Spacing="30">
 
-            <Label Text="ボディー統計"
-                   VerticalOptions="StartAndExpand"/>
+            <BoxView Text="   "/>
+
+            <BoxView Color="Silver"
+                     Text="ボディー統計"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                          VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand">
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
 
-        
 
-        <StackLayout Orientation="Horizontal"
-                     Spacing="100">
+            <StackLayout Orientation="Horizontal"
+                         Spacing="100">
 
-            <Label Text="前回比　体重(kg)" />
+                <Label Text="前回比　体重(kg)" />
 
-                <Entry x:Name="GWeight"
-                       WidthRequest="100"
-                       Text="             "
-                       Completed = "OnCompleted"/>
+                <Frame OutlineColor="Black">
+                    <Entry x:Name="GWeight"
+                           WidthRequest="100"
+                           Text="             "/>
+                </Frame>
 
                 <Label Text="体脂肪 (%)"/>
-            
-                <Entry x:Name="Gbfat"
-                       WidthRequest="100"
-                       Text="             "
-                       Completed = "OnCompleted"/>
+
+                <Frame OutlineColor="Black">
+                    <Entry x:Name="Gbfat"
+                           WidthRequest="100"
+                           Text="             "/>
+                </Frame>
 
             </StackLayout>
 
+
             <StackLayout Orientation="Horizontal"
-                     Spacing="100">
-                
+                         Spacing="100">
+
                 <Label Text="日付" />
-                
+
                 <DatePicker Format="D" />
-                
+
             </StackLayout>
+
 
             <StackLayout Orientation="Horizontal"
-                     Spacing="40">
+                         Spacing="40">
 
-            <Label Text="体重(kg)"/>
+                <Label Text="体重(kg)"/>
 
-            <Entry x:Name="Weight"
-                   WidthRequest="100"
-                   Text="             "
-                   Completed = "OnCompleted"/>
-            
-        </StackLayout>
+                <Frame OutlineColor="Black">
+                    <Entry x:Name="Weight"
+                           WidthRequest="100"
+                           Text="             "/>
+                </Frame>
 
-        <StackLayout Orientation="Horizontal"
-                     Spacing="30">
-
-            <Label Text="体脂肪(%)"/>
-
-                <Entry x:Name="Bfat"
-                       WidthRequest="100"
-                       Text="             "
-                       Completed = "OnCompleted"/>
-            
             </StackLayout>
 
-        <StackLayout Orientation="Horizontal"
-                     Spacing="290">
 
-            <Button Text="TOP"
-                    Clicked="Button_Clicked"/>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="30">
 
-            <Button Text="記録"
-                    Clicked="Button_Clicked"/>
+                <Label Text="体脂肪(%)"/>
 
-            <Button Text="ストップウォッチ"
-                    Clicked="Button_Clicked"/>
+                <Frame OutlineColor="Black">
+                    <Entry x:Name="Bfat"
+                           WidthRequest="100"
+                           Text="             "/>
+                </Frame>
 
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="290">
+
+                <Button Text="TOP"
+                        Clicked="Button_Clicked"/>
+
+                <Button Text="記録"
+                        Clicked="Button_Clicked"/>
+
+                <Button Text="ストップウォッチ"
+                        Clicked="Button_Clicked"/>
+                
+            </StackLayout>
         </StackLayout>
-        </StackLayout>
-
-
-
     </ContentPage.Content>
 </ContentPage>
