@@ -25,13 +25,12 @@
 
         
 
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal"
+                     Spacing="50">
 
-            <Label Text="前回比　体重(kg)" 
-                   Spacing="50"/>
+            <Label Text="前回比　体重(kg)" />
 
-            <Label Text="体脂肪 (%)"
-                   Spacing="50"/>
+            <Label Text="体脂肪 (%)"/>
 
         </StackLayout>
 
