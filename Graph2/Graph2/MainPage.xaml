@@ -6,90 +6,68 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-        <StackLayout>
+        <StackLayout Orientation="Vertical">
 
             <Label Text=""
-               VerticalOptions="StartAndExpand"/>
+                   VerticalOptions="StartAndExpand"/>
 
             <Label Text="ボディー統計"
                    VerticalOptions="CenterAndExpand"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                      VerticalOptions="FillAndExpand"
-                      HorizontalOptions="FillAndExpand">
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
             </oxy:PlotView>
 
+        
+
+        <StackLayout Orientation="Horizontal">
+
+            <Label Text="前回比　体重(kg)" />
+
+            <Label Text="体脂肪 (%)"/>
+
         </StackLayout>
 
-        <Grid>
-            <!-- 行の定義 -->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="70" />
-                <RowDefinition Height="70" />
-                <RowDefinition Height="70" />
-                <RowDefinition Height="70" />
-                <RowDefinition Height="70" />
-            </Grid.RowDefinitions>
+        <Label Text="日付" />
 
-            <!-- 列の定義 -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="250"/>
-            </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Horizontal">
 
-            <Label Text="前回比　体重(kg)" 
-                   Grid.Row="0"
-                   Grid.Column="0"/>
-
-            <Label Text="体脂肪 (%)"
-                   Grid.Row="0"
-                   Grid.Column="2"/>
-
-            <Label Text="日付" 
-                   Grid.Row="1"
-                   Grid.Column="0"/>
-
-
-            <Label Text="体重(kg)"
-                   Grid.Row="2"
-                   Grid.Column="0"/>
+            <Label Text="体重(kg)"/>
 
             <Entry x:Name="Weight"
                    Text="         "
-                   Grid.Row="2"
-                   Grid.Column="1"/>
+                   HeightRequest="50"
+                   WidthRequest="100"/>
+        </StackLayout>
 
+        <StackLayout Orientation="Horizontal">
 
-            <Label Text="体脂肪(%)"
-                   Grid.Row="3"
-                   Grid.Column="0"/>
+            <Label Text="体脂肪(%)"/>
 
             <Entry x:Name="Bfat"
-                   Text="         "
-                   Grid.Row="3"
-                   Grid.Column="1"/>
+                   Text="         "/>
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
 
             <Button Text="TOP"
-                    Grid.Row="4"
-                    Grid.Column="0"
                     Clicked="Button_Clicked"/>
 
             <Button Text="記録"
-                    Grid.Row="4"
-                    Grid.Column="1"
+
                     Clicked="Button_Clicked"/>
 
             <Button Text="ストップウォッチ"
-                    Grid.Row="4"
-                    Grid.Column="2"
                     Clicked="Button_Clicked"/>
-        </Grid>
+
+        </StackLayout>
+        </StackLayout>
+
 
 
     </ContentPage.Content>
