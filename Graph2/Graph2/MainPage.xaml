@@ -11,11 +11,22 @@
 
             <Label Text="   "/>
 
-            <Label Text="                                                              ボディー統計"
+            <StackLayout Orientation="Horizontal"
+                         Spacing="300">
+                
+                <Button Text="<戻る"
+                        Clicked="Button_Clicked"/>
+                
+                <Label Text="ボディー統計"
                    FontSize="30"
                    FontFamily="sans-serif"
                    BackgroundColor="Silver"
                    HeightRequest="30"/>
+
+                <Button Text="保存"
+                        Clicked="Button_Clicked"/>
+
+            </StackLayout>
 
             <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
@@ -27,17 +38,19 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="100">
+                         Spacing="75">
 
                 <Label Text="前回比　体重(kg)" 
-                       FontSize="30"/>
+                       FontSize="30"
+                       WidthRequest="120"/>
 
                 <Entry x:Name="GWeight"
                            WidthRequest="100"
                            Text="             "/>
 
                 <Label Text="体脂肪 (%)"
-                       FontSize="30"/>
+                       FontSize="30"
+                       WidthRequest="120"/>
 
                     <Entry x:Name="Gbfat"
                            WidthRequest="100"
