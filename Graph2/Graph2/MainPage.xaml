@@ -13,11 +13,11 @@
                    VerticalOptions="StartAndExpand"/>
 
             <Label Text="ボディー統計"
-                   VerticalOptions="StartAndExpand"/>
+                   VerticalOptions="Start"/>
 
             <oxy:PlotView Model="{Binding Model}"
-                          VerticalOptions="StartAndExpand"
-                          HorizontalOptions="StartAndExpand">
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
@@ -26,7 +26,7 @@
         
 
         <StackLayout Orientation="Horizontal"
-                     Spacing="50">
+                     Spacing="150">
 
             <Label Text="前回比　体重(kg)" />
 
@@ -55,7 +55,7 @@
             </StackLayout>
 
         <StackLayout Orientation="Horizontal"
-                     Spacing="60">
+                     Spacing="150">
 
             <Button Text="TOP"
                     Clicked="Button_Clicked"/>
