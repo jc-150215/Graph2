@@ -7,15 +7,15 @@
     <ContentPage.Content>
 
         <StackLayout Orientation="Vertical"
-                     Spacing="30">
+                     Spacing="25">
             
-            <Label Text="   "
-                   VerticalOptions="StartAndExpand"/>
+            <Label Text="   "/>
 
             <StackLayout Orientation="Horizontal"
                          Spacing="300">
                 
                 <Button Text="戻る"
+                        BackgroundColor="Silver"
                         Clicked="Button_Clicked"/>
                 
                 <Label Text="ボディー統計"
@@ -25,6 +25,7 @@
                        HeightRequest="30"/>
 
                 <Button Text="保存"
+                        BackgroundColor="Silver"
                         Clicked="Button_Clicked"/>
 
             </StackLayout>
@@ -42,19 +43,19 @@
                          Spacing="75">
 
                 <Label Text="前回比　体重(kg)" 
-                       FontSize="30"
-                       WidthRequest="120"/>
+                       FontSize="20"
+                       WidthRequest="110"/>
 
                 <Entry x:Name="GWeight"
-                       WidthRequest="100"
+                       WidthRequest="120"
                        Text="             "/>
 
                 <Label Text="体脂肪 (%)"
-                       FontSize="30"
-                       WidthRequest="120"/>
+                       FontSize="20"
+                       WidthRequest="110"/>
                 
                 <Entry x:Name="Gbfat"
-                       WidthRequest="100"
+                       WidthRequest="120"
                        Text="             "/>
 
             </StackLayout>
@@ -66,7 +67,8 @@
                 <Label Text="日付" 
                        FontSize="30"/>
 
-                <DatePicker Format="D" />
+                <DatePicker Format="D" 
+                            WidthRequest="100"/>
 
             </StackLayout>
 
