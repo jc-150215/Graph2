@@ -6,8 +6,9 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-        <StackLayout Orientation="Vertical">
-            <Label Text="   "/>
+        <StackLayout>
+            <Label Text="   "
+                   VerticalOptions="StartAndExpand"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical"
