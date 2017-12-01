@@ -6,13 +6,11 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
-        <StackLayout Orientation="Vertical">
-            <Label Text="   "
-                   VerticalOptions="StartAndExpand"/>
-        </StackLayout>
-
         <StackLayout Orientation="Vertical"
                      Spacing="30">
+            
+            <Label Text="   "
+                   VerticalOptions="StartAndExpand"/>
 
             <StackLayout Orientation="Horizontal"
                          Spacing="300">
@@ -21,9 +19,10 @@
                         Clicked="Button_Clicked"/>
                 
                 <Label Text="ボディー統計"
-                   FontSize="30"
-                   BackgroundColor="Silver"
-                   HeightRequest="30"/>
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       BackgroundColor="Silver"
+                       HeightRequest="30"/>
 
                 <Button Text="保存"
                         Clicked="Button_Clicked"/>
