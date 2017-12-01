@@ -6,15 +6,17 @@
              x:Class="Graph2.MainPage">
     <ContentPage.Content>
 
+        <StackLayout Orientation="Vertical">
+            <Label Text="   "/>
+        </StackLayout>
+
         <StackLayout Orientation="Vertical"
                      Spacing="30">
-
-            <Label Text="   "/>
 
             <StackLayout Orientation="Horizontal"
                          Spacing="300">
                 
-                <Button Text="<戻る"
+                <Button Text="戻る"
                         Clicked="Button_Clicked"/>
                 
                 <Label Text="ボディー統計"
@@ -45,16 +47,18 @@
                        WidthRequest="120"/>
 
                 <Entry x:Name="GWeight"
-                           WidthRequest="100"
-                           Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       BackgroundColor="Silver"/>
 
                 <Label Text="体脂肪 (%)"
                        FontSize="30"
                        WidthRequest="120"/>
-
-                    <Entry x:Name="Gbfat"
-                           WidthRequest="100"
-                           Text="             "/>
+                
+                <Entry x:Name="Gbfat"
+                       WidthRequest="100"
+                       Text="             "
+                       BackgroundColor="Silver"/>
 
             </StackLayout>
 
@@ -77,8 +81,9 @@
                        FontSize="30"/>
 
                 <Entry x:Name="Weight"
-                           WidthRequest="100"
-                           Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       BackgroundColor="Silver"/>
 
             </StackLayout>
 
@@ -90,8 +95,9 @@
                        FontSize="30"/>
 
                 <Entry x:Name="Bfat"
-                           WidthRequest="100"
-                           Text="             "/>
+                       WidthRequest="100"
+                       Text="             "
+                       BackgroundColor="Silver"/>
 
             </StackLayout>
 
