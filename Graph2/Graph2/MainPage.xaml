@@ -14,19 +14,18 @@
             <StackLayout Orientation="Horizontal"
                          Spacing="300">
                 
-                <Button Text="戻る"
-                        BackgroundColor="Silver"
-                        Clicked="Button_Clicked"/>
-                
-                <Label Text="ボディー統計"
-                       FontSize="30"
-                       FontAttributes="Bold"
-                       BackgroundColor="Silver"
-                       HeightRequest="30"/>
+                <BoxView Color="Silver"
+                         HeightRequest="30">
 
-                <Button Text="保存"
-                        BackgroundColor="Silver"
+                    <Button Text="戻る"
                         Clicked="Button_Clicked"/>
+
+                    <Label Text="ボディー統計"
+                       FontSize="30"/>
+
+                    <Button Text="保存"
+                        Clicked="Button_Clicked"/>
+                </BoxView>
 
             </StackLayout>
 
@@ -43,8 +42,8 @@
                          Spacing="75">
 
                 <Label Text="前回比　体重(kg)" 
-                       FontSize="20"
-                       WidthRequest="110"/>
+                       FontSize="25"
+                       WidthRequest="130"/>
 
                 <Entry x:Name="GWeight"
                        WidthRequest="120"
